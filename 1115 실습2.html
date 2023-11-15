@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 스타일 속성을 변경합니다.
+            $('h1').css('color', 'red');
+            $('h1').css('background', 'purple');
+        });
+    </script>
+</head>
+<body>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 스타일을 적용합니다.
+            $('.box').css('float', 'right');
+            $('.box').css('margin', 10);
+            $('.box').css('width', 100);
+            $('.box').css('height', 100);
+            $('.box').css('backgroundColor', 'yellowgreen');
+        });
+    </script>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Basic</title>
+    <style>
+        #box {
+            width: 100px; height: 100px;
+            background-color: palevioletred;
+        }
+
+        #box.hover {
+            background-color: skyblue;
+            border-radius: 50px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#box').hover(function () {
+                // 스타일을 변경합니다.
+                $('#box').addClass('hover');
+            }, function () {
+                // 스타일을 변경합니다.
+                $('#box').removeClass('hover');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>
+
+
